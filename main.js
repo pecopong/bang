@@ -1,8 +1,4 @@
 const init = function(){
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-            .register('sw.js')
-    }
 
     const cons = document.createElement('div')
     cons.style['position'] = 'fixed'
@@ -97,6 +93,11 @@ const init = function(){
             resultBoard.style['color'] = 'rgb(255,0,0)'
         }
         clearInterval(timer)
+    }
+
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+            .register('/sw.js')
     }
 }
 
