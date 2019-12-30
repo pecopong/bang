@@ -1,4 +1,9 @@
 const init = function(){
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+                .register('./sw.js');
+    }
+
     const cons = document.createElement('div')
     cons.style['position'] = 'fixed'
     cons.style['top'] = '0px'
