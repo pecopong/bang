@@ -1,7 +1,7 @@
 const init = function(){
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-                .register('./sw.js');
+            .register('./sw.js')
     }
 
     const cons = document.createElement('div')
