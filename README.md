@@ -1,2 +1,2 @@
 # Bang
-* https://pecopong.github.io/bang/
+* https://pecopong.github.io/cobe/
